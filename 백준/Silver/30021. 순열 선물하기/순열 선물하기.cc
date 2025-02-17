@@ -17,7 +17,6 @@ int main(){
     
     cout << "YES\n";
     
-    // N = 1인 경우
     if(N == 1){
         cout << "1\n";
         return 0;
