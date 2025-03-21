@@ -19,8 +19,11 @@ int main() {
             dp[i + T[i]] = max(dp[i + T[i]], dp[i] + P[i]);
         }
     }
-
-    cout << *max_element(dp, dp + N + 1) << endl;
+    long long answer = 0;
+    for (int i = 0; i <= N; i++) {
+        answer = max(answer, dp[i]);
+    }
+    cout << answer << endl;
 
     return 0;
 }
